@@ -42,7 +42,7 @@ import java.util.List;
             url = "http://wso2.com"
         ))
 )
-@Path("/order")
+@Path("/")
 public class OrderService {
     private OrderRepository repository=new OrderRepository();
 
