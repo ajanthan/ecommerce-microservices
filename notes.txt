@@ -1,0 +1,15 @@
+mvn archetype:generate -DarchetypeGroupId=org.wso2.msf4j \
+-DarchetypeArtifactId=msf4j-microservice -DarchetypeVersion=2.6.2 \
+-DgroupId=org.wso2.apim.example -DartifactId=Catalog-Service -Dversion=0.1-SNAPSHOT \
+-Dpackage=org.wso2.apim.example.catalog -DserviceClass=CatalogService
+
+mvn archetype:generate -DarchetypeGroupId=org.wso2.msf4j \
+-DarchetypeArtifactId=msf4j-microservice -DarchetypeVersion=2.6.2 \
+-DgroupId=org.wso2.apim.example -DartifactId=Image-Service -Dversion=0.1-SNAPSHOT \
+-Dpackage=org.wso2.apim.example.image -DserviceClass=ImageService
+
+
+mvn archetype:generate -DarchetypeGroupId=org.wso2.msf4j \
+-DarchetypeArtifactId=msf4j-microservice -DarchetypeVersion=2.6.2 \
+-DgroupId=org.wso2.apim.example -DartifactId=Order-Service -Dversion=0.1-SNAPSHOT \
+-Dpackage=org.wso2.apim.example.order -DserviceClass=OrderService
