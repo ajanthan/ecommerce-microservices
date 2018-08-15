@@ -11,9 +11,10 @@
 Replace the {docker registry address} with the docker registry address image going to be uploaded.
 If the Docker Hub is the registry replace it  with the Docker Hub username.
 
-3.Update the docker image name({docker registry address}/orderms) in following file[container/k8s/k8s-controller.yaml]
+3.Update the docker image name({docker registry address}/orderms) in following [file](container/k8s/k8s-controller.yaml)
 
-```
+```yaml
+
 apiVersion: v1
 kind: ReplicationController
 metadata:
@@ -46,4 +47,4 @@ spec:
 
 4.Deploy the service in k8s
 
-kubectl apply -f container/k8s/
+`kubectl apply -f container/k8s/`
