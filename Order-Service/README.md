@@ -1,5 +1,20 @@
 ## How to Run the Project
 
+The service can be either deployed locally or on k8s.
+
+### Deploying Locally
+
+1.Build the maven project by issuing following command in the project directory
+
+``mvn clean install``
+
+2. Start the service as follows
+
+``java -jar  -Dtransports.netty.conf=./netty-transports.yml ./target/Order-Service-0.1-SNAPSHOT.jar``
+
+### Deploying on Kubernetes
+
+
 1.Build the maven project by issuing following command in the project directory
 
 ``mvn clean install``
